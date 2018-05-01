@@ -6,6 +6,8 @@ import AppHeader from './components/Header';
 import AppHome from './components/Home';
 import Program from './components/Program';
 import Profiles from './components/Profiles';
+import Team from './components/Team';
+import Contact from './components/Contact';
 import AppFooter from './components/Footer';
 import { ThankCandidate, ThankRecrute } from './components/Thanks';
 import withFade from './components/Fade.jsx';
@@ -37,6 +39,8 @@ class App extends Component {
         <Route exact path="/" component={AppHome} />
         <Route path="/programme/:section" component={withFade(Program)} />
         <Route path="/profils/:section" component={withFade(Profiles)} />
+        <Route path="/team" component={withFade(Team)} />
+        <Route path="/contact" component={withFade(Contact)} />
         <Route path="/merci" component={ThankCandidate} />
         <Route path="/thank" component={ThankRecrute} />
         <AppFooter />
